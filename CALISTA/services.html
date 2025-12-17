@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cally Services</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/services.css">
+</head>
+<body>
+    <div id="loader" class="loader">
+        <div class="loader-circle"></div>
+    </div>
+    <header>
+      <nav>
+        <div class="hero-name">Cally<span>Dev</span></div>
+        <div class="hero-navLink">
+          <ul id="hide">
+            <a href="/index.html"><i class="fa-regular fa-house fa-sm"></i> Home</a>
+            <a class="active" href="/about.html"><i class="fa-regular fa-circle-user fa-sm"></i> About</a>
+            <a class="active" href="/services.html"><i class="fa-solid fa-code fa-sm"></i> Services</a>
+           <a class="active" href="/contact.html"><i class="fa-solid fa-user fa-sm"></i> Contact</a>
+          </ul>
+        </div>
+        <!-- <svg class="open" id="openMenu" xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg> -->
+      </nav>
+    </header>
+    <section>
+        <div  class="hero-head">
+            <h1>Our <span >Services</span></h1>
+            <p>Professional development solutions  tailored to your needs</p>
+        </div>
+        
+        <div class="services">
+            <div class="frontEnd">
+                <div><i class="fa-solid fa-code fa-2xl"></i></div>
+                <h3>Front End Development</h3>
+                <div class="line"></div>
+                <p>Create stunning, responsive user interfaces with modern technologies. We build fast, accessible, and SEO-friendly websites that deliver exceptional user experiences across all devices and platforms.</p>
+                <div class="View-tools">
+                    <button id="open-FrontEnd">View Tools</button>
+                </div>
+            </div>
+            
+            <div class="backEnd">
+                <div><i class="fa-solid fa-server fa-2xl"></i></div>
+                <h3>Back End Development</h3>
+                <div class="line"></div>
+                <p>Build robust, scalable server-side applications and APIs. We specialize in creating secure, high-performance backends that power your applications and handle complex business logic with efficiency.</p>
+                <div class="View-tools">
+                    <button id="open-backend">View Tools</button>
+                </div>
+            </div>
+            
+            <div class="flutter">
+                <div><i class="fa-brands fa-mobile-alt fa-2xl"></i></div>
+                <h3>Flutter & Dart Development</h3>
+                <div class="line"></div>
+                <p>Develop beautiful, native mobile applications for both iOS and Android from a single codebase. We create high-performance mobile apps with smooth animations and native-like experiences.</p>
+                <div class="View-tools">
+                    <button id="open-flutter">View Tools</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-name">Cally <span>Dev</span></div>
+        <p>© 2023 Cally Dev Services. All rights reserved.</p>
+    </footer>
+    <!-- MODAL STRUCTURE -->
+        <div id="frontend-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal" id="close-frontend">&times;</span>
+                <h3>Frontend Development Tools</h3>
+                <p>We use cutting-edge technologies to build modern web interfaces:</p>
+                <div class="tools-list ft">
+                    <div class="tool-item"><i class="fab fa-html5"></i> HTML5</div>
+                    <div class="tool-item"><i class="fab fa-css3-alt"></i> CSS3 & Sass</div>
+                    <div class="tool-item"><i class="fab fa-js"></i> JavaScript ES6+</div>
+                    <div class="tool-item"><i class="fab fa-react"></i> React.js</div>
+                    <div class="tool-item"><i class="fab fa-vuejs"></i> Vue.js</div>
+                    <div class="tool-item"><i class="fab fa-angular"></i> Angular</div>
+                    <div class="tool-item"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+                    <div class="tool-item"><i class="fab fa-npm"></i> Webpack & Vite</div>
+                </div>
+            </div>
+        </div>
+    
+    <!-- Modal for Backend Tools -->
+    <div id="backend-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-backend">&times;</span>
+            <h3>Backend Development Tools</h3>
+            <p>We build robust server-side solutions with these technologies:</p>
+            <div class="tools-list bt">
+                <div class="tool-item"><i class="fab fa-node-js"></i> Node.js</div>
+                <div class="tool-item"><i class="fab fa-python"></i> Python & Django</div>
+                <div class="tool-item"><i class="fas fa-database"></i> MySQL & PostgreSQL</div>
+                <div class="tool-item"><i class="fas fa-database"></i> MongoDB</div>
+                <div class="tool-item"><i class="fab fa-aws"></i> AWS Services</div>
+                <div class="tool-item"><i class="fas fa-server"></i> REST & GraphQL APIs</div>
+                <div class="tool-item"><i class="fab fa-docker"></i> Docker & Kubernetes</div>
+                <div class="tool-item"><i class="fas fa-shield-alt"></i> Security & Authentication</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal for Flutter Tools -->
+    <div id="flutter-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-flutter">&times;</span>
+            <h3>Flutter & Dart Development Tools</h3>
+            <p>We create cross-platform mobile apps with these technologies:</p>
+            <div class="tools-list flt">
+                <div class="tool-item"><i class="fab fa-flutter"></i> Flutter Framework</div>
+                <div class="tool-item"><i class="fas fa-code"></i> Dart Programming</div>
+                <div class="tool-item"><i class="fas fa-mobile-alt"></i> iOS & Android Deployment</div>
+                <div class="tool-item"><i class="fas fa-paint-brush"></i> Material & Cupertino Widgets</div>
+                <div class="tool-item"><i class="fas fa-fire"></i> Firebase Integration</div>
+                <div class="tool-item"><i class="fas fa-plug"></i> API Integration</div>
+                <div class="tool-item"><i class="fas fa-bolt"></i> State Management (Provider, Bloc)</div>
+                <div class="tool-item"><i class="fas fa-tachometer-alt"></i> Performance Optimization</div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="/service.js"></script>
+</body>
+</html>
